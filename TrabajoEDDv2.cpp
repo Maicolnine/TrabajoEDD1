@@ -12,7 +12,7 @@ struct nodo {
 
 // Punteros globales para manipular la lista
 struct nodo *cab = NULL, *aux = NULL, *aux2 = NULL;
-    int contadorID = 1;
+    int contadorid = 1;
 
 // Función para agregar un nuevo nodo al final de la lista
 void addProducto() {
@@ -30,7 +30,7 @@ void addProducto() {
     cin >> aux->productos;
 
     // El acumulador para los id
-    aux->id = contadorID++;
+    aux->id = contadorid++;
     // El nuevo nodo apunta a NULL (fin de lista)
     aux->sig = NULL;
     
